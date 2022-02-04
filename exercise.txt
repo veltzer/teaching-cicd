@@ -1,4 +1,3 @@
-
 - Take this project and create a similar project of your own on github.
 
 - make sure that testing on this project works.
