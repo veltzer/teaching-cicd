@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'python:3.5.1' } }
+    agent { docker { image 'python_with_pytest:latest' } }
     stages {
         stage('test') {
             steps {
