@@ -1,6 +1,6 @@
 pipeline {
     // agent { docker { image 'python_with_pytest:latest' } }
-    agent { any }
+    agent any
     stages {
         stage('test') {
             steps {
