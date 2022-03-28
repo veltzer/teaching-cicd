@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh 'PYTHONPATH=. pytest -s'
+                sh 'PYTHONPATH=. pytest'
             }
         }
     }
