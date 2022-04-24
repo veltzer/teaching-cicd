@@ -1,5 +1,9 @@
-all:
+ALL_SOURCES:=$(shell find . -type f -and -name "*.py")
+
+
+.PHONY: all
+all: test.stamp
 	@true
 
-test:
+test.stamp: $(ALL_SOURCES)
 	PYTHONPATH=. pytest
