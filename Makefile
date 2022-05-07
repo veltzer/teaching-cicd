@@ -13,3 +13,8 @@ all: test.stamp
 test.stamp: $(ALL_SOURCES)
 	PYTHONPATH=. pytest
 	touch $@
+
+.PHONY: clean_hard
+clean_hard:
+	$(info doing [$@])
+	$(Q)git clean -qffxd
