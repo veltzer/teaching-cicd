@@ -11,6 +11,9 @@ all: test.stamp
 	@true
 
 test.stamp: $(ALL_SOURCES)
+	@pymakehelper only_print_on_error python -m pytest tests
+
+simple.stamp:
 	PYTHONPATH=. pytest
 	touch $@
 
