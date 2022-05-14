@@ -11,7 +11,7 @@ config_requies = [
 test_requires = [
     "pytest",
 ]
-make_requies = [
+make_requires = [
     "pymakehelper",
 ]
 
