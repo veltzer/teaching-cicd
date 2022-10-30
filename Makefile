@@ -7,17 +7,17 @@ ALL_SOURCES:=$(shell find . -type f -and -name "*.py")
 # rules #
 #########
 .PHONY: all
-all: test.stamp
+all: out/test.stamp
 	@true
 
-test.stamp: $(ALL_SOURCES)
+out/test.stamp: $(ALL_SOURCES)
 	$(info doing [$@])
 	@pymakehelper only_print_on_error python -m pytest tests
 	@pymakehelper touch_mkdir $@
 
-simple.stamp:
-	PYTHONPATH=. pytest
-	touch $@
+out/simple.stamp:
+	@PYTHONPATH=. pytest
+	@pymakehelper touch_mkdir $@
 
 .PHONY: clean_hard
 clean_hard:
