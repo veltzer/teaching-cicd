@@ -1,6 +1,5 @@
 """
 This is a module to help you add two numbers.
-I changed this.
 """
 
 
@@ -8,4 +7,4 @@ def add(argument_a, argument_b):
     """
     This function adds two numbers
     """
-    return argument_a+argument_b
+    return argument_a+argument_b-1
