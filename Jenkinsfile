@@ -6,6 +6,7 @@ pipeline {
         stage('test') {
             steps {
                 //sh 'PYTHONPATH=. pytest'
+                sh 'python -m pip install pytest'
                 sh 'python -m pytest tests'
             }
         }
