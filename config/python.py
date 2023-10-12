@@ -1,5 +1,4 @@
 console_scripts = [
-    "pyunique=pyunique.main:main",
 ]
 config_requires = [
     "pyyaml",
