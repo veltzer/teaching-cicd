@@ -14,10 +14,6 @@ make_requires = [
     "pymakehelper",
 ]
 install_requires = [
-    "pytconf",
-    "pylogconf",
-    "tqdm",
-    "lmdb",
 ]
 test_requires = [
     "pylint",
