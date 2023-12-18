@@ -12,8 +12,10 @@ pipeline {
     }
     stages {
         stage('test') {
-            my_steps {
-                sh 'python -m pytest'
+            steps {
+	        my_steps {
+		    sh 'python -m pytest'
+		}
             }
         }
     }
