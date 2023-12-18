@@ -1,3 +1,9 @@
+def my_steps(code) {
+	sh 'echo before'
+	code()
+	sh 'echo after'
+}
+
 pipeline {
     agent {
         docker {
@@ -6,7 +12,7 @@ pipeline {
     }
     stages {
         stage('test') {
-            steps {
+            my_steps {
                 sh 'python -m pytest'
             }
         }
