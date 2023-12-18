@@ -1,13 +1,13 @@
-- Take this project and create a similar project of your own on github.
+* Take this project and create a similar project of your own on github.
 
-- make sure that testing on this project works.
+* make sure that testing on this project works.
 
-- Learn about github workflows/actions
+* Learn about github workflows/actions
 
-- Create a workflow CI/CD solution for your project.
+* Create a workflow CI/CD solution for your project.
 
-- Commit and push to see your CI/CD workflow run.
+* Commit and push to see your CI/CD workflow run.
 
-- Fail your work flow to see what happens.
+* Fail your work flow to see what happens.
 
-- Add a Badge on your README.md file to reflect whether your project builds or fails CI/CD.
+* Add a Badge on your README.md file to reflect whether your project builds or fails CI/CD.
