@@ -18,5 +18,12 @@ pipeline {
 		}
 	    }
         }
+	stage('Run docker container') {
+	    steps {
+		script {
+			sh 'docker run -it myapp'
+		}
+	    }
+        }
     }
 }
