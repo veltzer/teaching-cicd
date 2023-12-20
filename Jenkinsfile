@@ -21,7 +21,7 @@ pipeline {
 	stage('Run docker container') {
 	    steps {
 		script {
-			sh 'docker run -it myapp'
+			sh 'docker run myapp'
 		}
 	    }
         }
