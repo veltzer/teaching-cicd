@@ -5,12 +5,11 @@ pipeline {
             parallel {
                 stage('Windows') {
                     agent {
-                        label 'SlaveWindows'
+                        label 'windows'
                     }
                     steps {
 			script {
-			        def version = System.getProperty("os.version")
-				bat 'echo "Sleep 10 seconds on Windows Node"'
+				bat 'powershell Start-Sleep -Seconds 10'
 			}
                     }
                 }
@@ -20,8 +19,7 @@ pipeline {
                     }
                     steps {
 			script {
-				def version = System.getProperty("os.version")
-				sh 'echo "Sleep 10 seconds on Linux Node"'
+				sh 'uname -r'
 			}
                     }
                 }
