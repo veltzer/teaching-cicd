@@ -9,7 +9,7 @@ pipeline {
                     }
                     steps {
 			script {
-				bat 'powershell Start-Sleep -Seconds 10'
+				bat 'ver'
 			}
                     }
                 }
