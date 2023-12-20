@@ -8,6 +8,7 @@ pipeline {
                         label 'SlaveWindows'
                     }
                     steps {
+			version = System.getProperty("os.version")
 		    	bat 'echo "Sleep 10 seconds on Windows Node"'
                     }
                 }
@@ -16,6 +17,7 @@ pipeline {
                         label 'unix'
                     }
                     steps {
+			version = System.getProperty("os.version")
 		    	sh 'echo "Sleep 10 seconds on Linux Node"'
                     }
                 }
