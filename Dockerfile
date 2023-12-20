@@ -1,2 +1,3 @@
 FROM python:3-alpine
-RUN pip install pytest
+COPY app.py /
+CMD ["/app.py"]
