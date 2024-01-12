@@ -8,7 +8,7 @@ config_requires = [
 ]
 install_requires = [
 ]
-make_requires = [
+build_requires = [
     "pydmt",
     "pymakehelper",
 ]
