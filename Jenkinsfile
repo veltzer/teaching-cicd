@@ -1,14 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'maven'
-        }
-    }
+    agent any
     stages {
-        stage('compile') {
+        stage('test') {
             steps {
-		sh '# wget google.com'
-                sh 'mvn compile -Dmaven.repo.local=m2'
+                sh 'python -m pytest'
             }
         }
     }
