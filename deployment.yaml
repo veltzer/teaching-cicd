@@ -13,7 +13,7 @@ spec:
     spec:
       hostNetwork: true
       containers:
-      - name: nginx
+      - name: nginxx
         # no version means latest
         image: nginx
         ports:
