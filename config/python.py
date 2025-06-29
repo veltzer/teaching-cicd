@@ -1,8 +1,5 @@
 """ python deps for this project """
 
-config_requires: list[str] = [
-    "pyclassifiers",
-]
 build_requires: list[str] = [
     "pydmt",
     "pymakehelper",
@@ -14,4 +11,4 @@ test_requires: list[str] = [
     "ruff",
 ]
 
-requires = config_requires + build_requires + test_requires
+requires = build_requires + test_requires
