@@ -1,2 +1,3 @@
-REAMDE file for this project 7
- 
+# teaching-cicd
+
+Mark Veltzer's repo for CI/CD course materials and exercises.
